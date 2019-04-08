@@ -1,0 +1,6 @@
+body {
+    font-family: 'Raleway', sans-serif !important;
+    background: #654ea3; 
+    background: -webkit-linear-gradient(to right, #370533, #3A12EB);
+    background: linear-gradient(to right, #370533, #3A12EB);
+}

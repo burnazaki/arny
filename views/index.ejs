@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+<div class="container text-center">
+    <div class="jumbotron mt-3">
+        
+        <h1 class="display-3">ARNy</h1>
+        <h4>Analizer of Random Numbers</h1>
+        
+        <div class="mt-4">
+            <button type="button" class="task btn btn btn-primary btn-lg active" onclick="changeLengthOfSearchPattern(1)">Task No.1</button>
+            <button type="button" class="task btn btn btn-primary btn-lg" onclick="changeLengthOfSearchPattern(2)">Task No.2</button>
+            <button type="button" class="task btn btn btn-primary btn-lg" onclick="changeLengthOfSearchPattern(3)">Task No.3</button>
+        </div>
+            
+        <div class="input-group pt-2">
+          <div class="custom-file">
+            <input class="custom-file-input" type="file" id="csvFileInput"  accept=".csv">
+            <label class="custom-file-label" for="csvFileInput">Choose file</label>
+          </div>
+            <button type="button" class="btn btn-success btn-lg btn-block mt-2" onclick="handleFiles(document.getElementById('csvFileInput').files)">Run!</button>
+        </div>
+            <ul class="list-group mt-2" id="result">
+            </ul>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/read-csv.js"></script>
+<% include ./partials/footer %>
